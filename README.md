@@ -1,4 +1,25 @@
-
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>浏览器精确定位</title>
+      <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+    <style>
+        html,body,#container{
+            height:100%;
+        }
+        .info{
+            width:26rem;
+        }
+    </style>
+<body>
+<div id='container'></div>
+<div class="info">
+    <h4 id='status'></h4><hr>
+    <p id='result'></p>
+</div>
 <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=c3e7b7ce8194cd6dc3794fcf6cea00be"></script>
 <script type="text/javascript">
     var map = new AMap.Map('container', {
@@ -42,4 +63,5 @@
         document.getElementById('result').innerHTML = '失败原因排查信息:'+data.message;
     }
 </script>
-
+</body>
+</html>
